@@ -47,6 +47,10 @@ namespace Clean_UI
             {
                 MessageBox.Show("All details are successfully submitted","Register",MessageBoxButton.OK,MessageBoxImage.Information);
             }
+            else
+            {
+                MessageBox.Show("Enter all the details", "Register", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
         }
     }
 }
