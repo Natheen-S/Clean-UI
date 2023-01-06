@@ -118,18 +118,36 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="address" xml:space="preserve">
-    <value>Address</value>
+    <value>住所</value>
   </data>
   <data name="age" xml:space="preserve">
-    <value>Age</value>
+    <value>年</value>
   </data>
   <data name="email" xml:space="preserve">
-    <value>Email</value>
+    <value>Eメール</value>
+  </data>
+  <data name="female" xml:space="preserve">
+    <value>女性</value>
   </data>
   <data name="gender" xml:space="preserve">
-    <value>Gender</value>
+    <value>性別</value>
+  </data>
+  <data name="male" xml:space="preserve">
+    <value>男</value>
   </data>
   <data name="name" xml:space="preserve">
-    <value>Name</value>
+    <value>名前</value>
+  </data>
+  <data name="register" xml:space="preserve">
+    <value>登録</value>
+  </data>
+  <data name="submit" xml:space="preserve">
+    <value>参加する</value>
+  </data>
+  <data name="submit_no" xml:space="preserve">
+    <value>すべての詳細を入力してください</value>
+  </data>
+  <data name="submit_yes" xml:space="preserve">
+    <value>すべての詳細が正常に送信されました</value>
   </data>
 </root>

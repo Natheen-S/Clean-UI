@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
+using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -45,7 +47,13 @@ namespace Clean_UI
         {
             if (txtbox_name.Text!=null && txtbox_email.Text!=null && txtbox_email.Text!=null && txtbox_age.Text!=null && rdbtn_male.IsChecked==true || rdbtn_female.IsChecked==true) 
             {
-                MessageBox.Show("All details are successfully submitted","Register",MessageBoxButton.OK,MessageBoxImage.Information);
+                ResourceManager rm = new ResourceManager("Clean_UI.Property.Language.Resource.submit_yes", Assembly.GetExecutingAssembly());
+                MessageBox.Show(rm.GetString("Clean_UI.Property.Language.Resource"));
+            }
+            else
+            {
+                ResourceManager rm = new ResourceManager("Clean_UI.Property.Language.Resource.submit_yes", Assembly.GetExecutingAssembly());
+                MessageBox.Show(rm.GetString("Clean_UI.Property.Language.Resource"));
             }
             else
             {

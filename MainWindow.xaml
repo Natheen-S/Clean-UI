@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Clean_UI"
+        xmlns:local="clr-namespace:Clean_UI.Resource"
         
         mc:Ignorable="d"
         AllowsTransparency="True" Background="Transparent"
@@ -28,22 +28,22 @@
             <StackPanel>
                 <StackPanel Margin="0,20,0,0">
                 <Image Source="https://img.icons8.com/external-ddara-lineal-ddara/512/external-registration-medical-ddara-lineal-ddara.png" Width="70" Opacity="0.5"></Image>
-                <TextBlock Text="Register" FontSize="20" FontWeight="DemiBold" FontFamily="helvetica" TextAlignment="Center" Opacity="0.5"/>
+                <TextBlock Text="{x:Static local:Resource.register}" FontSize="20" FontWeight="DemiBold" FontFamily="helvetica" TextAlignment="Center" Opacity="0.5"/>
                 </StackPanel>
             
             
                 <StackPanel Margin="0,10,0,0" Orientation="Horizontal" >
-                <TextBox x:Name="txtbox_name" Text="{x:Static local:Resource1.name}" Background="Transparent" Width="150" HorizontalAlignment="Center" HorizontalContentAlignment="Left" FontSize="15" FontFamily="helvetica" FontWeight="DemiBold" Opacity="0.5" Margin="112,0,0,0"/>
-                    <Image Source="https://cdn-icons-png.flaticon.com/128/6619/6619118.png" Width="20" Opacity="0.5"></Image>
+                <TextBox x:Name="txtbox_name" Text="{x:Static local:Resource.name}" Background="Transparent" Width="150" HorizontalAlignment="Center" HorizontalContentAlignment="Left" FontSize="15" FontFamily="helvetica" FontWeight="DemiBold" Opacity="0.5" Margin="112,0,0,0"/>
+                <Image Source="https://cdn-icons-png.flaticon.com/128/6619/6619118.png" Width="20" Opacity="0.5"></Image>
                     
                     
                 </StackPanel>
                 <StackPanel>
-                    <Border Height="2" Width="165" Background="Black" Opacity="0.5" Margin="15,0,0,0"/>
+                <Border Height="2" Width="165" Background="Black" Opacity="0.5" Margin="15,0,0,0"/>
                 </StackPanel>
 
                 <StackPanel Margin="0,10,0,0" Orientation="Horizontal" >
-                    <TextBox x:Name="txtbox_email" Text="{x:Static local:Resource1.email}" Background="Transparent" Width="150" HorizontalAlignment="Center" HorizontalContentAlignment="Left" FontSize="15" FontFamily="helvetica" FontWeight="DemiBold" Opacity="0.5" Margin="112,0,0,0"/>
+                    <TextBox x:Name="txtbox_email" Text="{x:Static local:Resource.email}" Background="Transparent" Width="150" HorizontalAlignment="Center" HorizontalContentAlignment="Left" FontSize="15" FontFamily="helvetica" FontWeight="DemiBold" Opacity="0.5" Margin="112,0,0,0"/>
                     <Image Source="https://cdn-icons-png.flaticon.com/128/3178/3178158.png" Width="20" Opacity="0.5"></Image>
 
 
@@ -53,7 +53,7 @@
                 </StackPanel>
 
                 <StackPanel Margin="0,10,0,0" Orientation="Horizontal" >
-                    <TextBox x:Name="txtbox_age" Text="{x:Static local:Resource1.age}" Background="Transparent" Width="150" HorizontalAlignment="Center" HorizontalContentAlignment="Left" FontSize="15" FontFamily="helvetica" FontWeight="DemiBold" Opacity="0.5" Margin="112,0,0,0"/>
+                    <TextBox x:Name="txtbox_age" Text="{x:Static local:Resource.age}" Background="Transparent" Width="150" HorizontalAlignment="Center" HorizontalContentAlignment="Left" FontSize="15" FontFamily="helvetica" FontWeight="DemiBold" Opacity="0.5" Margin="112,0,0,0"/>
                     <Image Source="https://cdn-icons-png.flaticon.com/128/31/31370.png" Width="20" Opacity="0.5"></Image>
 
 
@@ -63,7 +63,7 @@
                 </StackPanel>
 
                 <StackPanel Margin="0,10,0,0" Orientation="Horizontal" >
-                    <TextBox x:Name="txtbox_address" Text="{x:Static local:Resource1.address}" Background="Transparent" AcceptsReturn="True" Width="150" HorizontalAlignment="Center" HorizontalContentAlignment="Left" FontSize="15" FontFamily="helvetica" FontWeight="DemiBold" Opacity="0.5" Margin="112,0,0,0"/>
+                    <TextBox x:Name="txtbox_address" Text="{x:Static local:Resource.address}" Background="Transparent" AcceptsReturn="True" Width="150" HorizontalAlignment="Center" HorizontalContentAlignment="Left" FontSize="15" FontFamily="helvetica" FontWeight="DemiBold" Opacity="0.5" Margin="112,0,0,0"/>
                     <Image Source="https://cdn-icons-png.flaticon.com/128/5654/5654521.png" Width="20" Opacity="0.5"></Image>
 
 
@@ -73,17 +73,17 @@
                 </StackPanel>
 
                 <StackPanel>
-                    <Label Content="Gender" Opacity="0.5" FontFamily="helvetca" FontSize="15" FontWeight="DemiBold" Margin="110,0,0,0"/>
+                    <Label Content="{x:Static local:Resource.gender}" Opacity="0.5" FontFamily="helvetca" FontSize="15" FontWeight="DemiBold" Margin="110,0,0,0"/>
                     <Border Height="2" Width="165" Background="Black" Opacity="0.5" Margin="15,0,0,0"/>
                     <StackPanel Orientation="Horizontal">
-                        <RadioButton Content="Male" Opacity="0.5" Margin="135,0,5,0" x:Name="rdbtn_male"/>
-                        <RadioButton Content="Female" Opacity="0.5" Margin="20,0,5,0" x:Name="rdbtn_female"/>
+                        <RadioButton Content="{x:Static local:Resource.male}" Opacity="0.5" Margin="135,0,5,0" x:Name="rdbtn_male"/>
+                        <RadioButton Content="{x:Static local:Resource.female}" Opacity="0.5" Margin="20,0,5,0" x:Name="rdbtn_female"/>
                     </StackPanel>
                 </StackPanel>
 
 
                 <StackPanel>
-                    <Button Content="Submit" Background="Transparent" Margin="0,30,0,0" Opacity="0.5" Click="Button_Click" FontFamily="helvetivca" FontSize="20" FontWeight="DemiBold" Width="90" />
+                    <Button Content="{x:Static local:Resource.submit}" Background="Transparent" Margin="0,30,0,0" Opacity="0.5" Click="Button_Click" FontFamily="helvetivca" FontSize="20" FontWeight="DemiBold" Width="90" />
 
                 </StackPanel>
                 
